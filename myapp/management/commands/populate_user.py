@@ -12,4 +12,3 @@ class Command(BaseCommand):
             user_object.save()
 
             print(">>> User with username: '{}' created".format('admin'))
-            """/Users/yurley.sanchez/Dev/proyectos/seguimiento_recoleccion_firmas/myapp/management/commands/populate_usuarios.py"""

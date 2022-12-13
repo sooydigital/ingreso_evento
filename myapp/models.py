@@ -11,10 +11,15 @@ class People(models.Model):
     code = models.CharField(
         max_length=20,
         verbose_name="Cedula")
-    
+    gender = models.CharField(max_length=10)
     email = models.EmailField()
+    mobile = models.CharField(
+        max_length=20,
+        verbose_name="celular"
+    )
 
     activated = models.BooleanField(default=False)
+    is_valid = models.BooleanField(default=False)
     timestamp = models.DateTimeField(blank=True, null=True)
 
 
