@@ -8,8 +8,7 @@ from myapp import views
 
 app_name = "app"
 urlpatterns = [
-    path('activate/', TemplateView.as_view(template_name="activation_form.html"),  name='activation_forms'),
-    path('test/', TemplateView.as_view(template_name="index.html"),  name='test'),
+    path('', TemplateView.as_view(template_name="index.html"),  name='test'),
     path('api/validate', views.validate, name='validate' )
 ]
 
