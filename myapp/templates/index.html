@@ -16,7 +16,6 @@
 </head>
 
 <body>
-    <p>&nbsp;</p>
     <div class="es-wrapper-color" style="background-color: #011744;">
         <!-- [if gte mso 9]&gt;-->
         <table class="es-wrapper"
@@ -34,10 +33,7 @@
                                             style="border-collapse: collapse; border-spacing: 0px; background-color: transparent; width: 850px;"
                                             cellspacing="0" cellpadding="0" align="center" bgcolor="#ffffff">
                                             <tbody>
-                                                <tr>
-                                                    <td style="padding: 0; margin: 0; padding-top: 30px; padding-left: 40px; padding-right: 40px;"
-                                                        align="left"> </td>
-                                                </tr>
+
                                                 <tr>
                                                     <td class="es-m-p30t es-m-p30b es-m-p20r es-m-p20l"
                                                         style="padding: 40px; margin: 0; background-color: #ffffff; border-radius: 25px 25px 0px 0px;"
@@ -77,29 +73,21 @@
                                                                                                     </td>
                                                                                                 </tr>
                                                                                                 <tr>
-                                                                                                    <td style="padding: 0; margin: 0; padding-top: 20px; font-size: 0px;"
-                                                                                                        align="center">
-                                                                                                        <img class="adapt-img"
-                                                                                                            style="border: 0; text-decoration: none;"
-                                                                                                            src="https://zolocd.stripocdn.email/content/guids/CABINET_448ae05e59885ecfff56653510ba03b9/images/educaccionweb.jpg"
-                                                                                                            alt=""
-                                                                                                            width="720" />
-                                                                                                    </td>
-                                                                                                </tr>
-                                                                                                <tr>
                                                                                                     <td style="padding: 0; margin: 0; padding-top: 30px;"
                                                                                                         align="center">
                                                                                                                 <div id="formulario">
 
                                                                                                         <p
-                                                                                                            style="margin: 0; font-family: 'Exo 2', sans-serif; line-height: 53px; color: #3399ff; font-size: 35px;"><strong>Hola, Ingresa Tu numero de documentos</strong>                                                                                                        </p>
+                                                                                                            style="margin: 0; font-family: 'Exo 2', sans-serif; line-height: 53px; color: #3399ff; font-size: 35px;"><strong>Hola,
+                                                                                                            <br> Ingresa tu número de documento</strong>                                                                                                        </p>
 
                                                                                                                     {% csrf_token %}
+                                                                                                                    <br>
                                                                                                                     <input type="text" id="id_code">
                                                                                                                     <br>
                                                                                                                     <br>
                                                                                                                     <div id='btn_sent' class="btn btn-primary">
-                                                                                                                        enviar
+                                                                                                                        Enviar
                                                                                                                     </div>
                                                                                                                 </div>
 
@@ -141,54 +129,6 @@
                                                                                                 </tr>
                                                                                             </tbody>
                                                                                         </table>
-                                                                                    </td>
-                                                                                </tr>
-                                                                            </tbody>
-                                                                        </table>
-                                                                    </td>
-                                                                </tr>
-                                                            </tbody>
-                                                        </table>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td style="padding: 40px; margin: 0; background-color: #ffffff;"
-                                                        align="left" bgcolor="#ffffff">
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td style="padding: 40px; margin: 0; background-color: #ffffff;"
-                                                        align="left" bgcolor="#ffffff">
-                                                        <table style="border-collapse: collapse; border-spacing: 0px;"
-                                                            width="100%" cellspacing="0" cellpadding="0">
-                                                            <tbody>
-                                                                <tr>
-                                                                    <td style="padding: 0; margin: 0; width: 770px;"
-                                                                        align="center" valign="top">
-
-                                                                    </td>
-                                                                </tr>
-                                                            </tbody>
-                                                        </table>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td style="padding: 0; margin: 0; padding-top: 0px; padding-left: 40px; padding-right: 40px;"
-                                                        align="left">
-                                                        <table style="border-collapse: collapse; border-spacing: 0px;"
-                                                            width="100%" cellspacing="0" cellpadding="0">
-                                                            <tbody>
-                                                                <tr>
-                                                                    <td style="padding: 0; margin: 0; width: 770px;"
-                                                                        align="center" valign="top">
-                                                                        <table
-                                                                            style="border-collapse: collapse; border-spacing: 0px;"
-                                                                            role="presentation" width="100%"
-                                                                            cellspacing="0" cellpadding="0">
-                                                                            <tbody>
-                                                                                <tr>
-                                                                                    <td style="padding: 0; margin: 0;"
-                                                                                        align="center" height="15"> 
                                                                                     </td>
                                                                                 </tr>
                                                                             </tbody>
@@ -246,12 +186,14 @@
                                                                             cellspacing="0" cellpadding="0">
                                                                             <tbody>
                                                                                 <tr>
+
                                                                                 </tr>
                                                                             </tbody>
                                                                         </table>
                                                                     </td>
                                                                 </tr>
                                                             </tbody>
+
                                                         </table>
                                                     </td>
                                                 </tr>
@@ -275,6 +217,8 @@
                                                                                 <tr>
                                                                                     <td style="padding: 0; margin: 0;"
                                                                                         align="center">
+                                                                                                    <img src="{% static 'img/logo_mt.png' %}" height="60" alt="logo" class="my-3">
+
                                                                                         <p
                                                                                             style="margin: 0; font-family: roboto, 'helvetica neue', helvetica, arial, sans-serif; line-height: 45px; color: #1f3b73; font-size: 30px;">
                                                                                             <strong>Síguenos en nuestras
