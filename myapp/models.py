@@ -11,10 +11,12 @@ class People(models.Model):
     code = models.CharField(
         max_length=20,
         verbose_name="Cedula")
+    
+    email = models.EmailField()
 
     activated = models.BooleanField(default=False)
     timestamp = models.DateTimeField(blank=True, null=True)
 
 
     def __str__(self):
-        return '{} - {} - {}'.format(self.nombre, self.code, self.activated)
+        return '{} - {} - {}'.format(self.full_name, self.code, self.activated)
