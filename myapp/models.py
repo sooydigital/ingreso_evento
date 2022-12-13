@@ -2,6 +2,7 @@ from django.db import models
 
 # Create your models here.
 
+
 class People(models.Model):
     full_name = models.CharField(
         max_length=1024,
@@ -12,7 +13,7 @@ class People(models.Model):
         verbose_name="Cedula")
 
     activated = models.BooleanField(default=False)
-    activated = models.DateTimeField(blank=True, null=True)
+    timestamp = models.DateTimeField(blank=True, null=True)
 
 
     def __str__(self):
