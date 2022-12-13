@@ -89,23 +89,26 @@
                                                                                                 <tr>
                                                                                                     <td style="padding: 0; margin: 0; padding-top: 30px;"
                                                                                                         align="center">
-                                                                                                        <p
-                                                                                                            style="margin: 0; font-family: 'Exo 2', sans-serif; line-height: 53px; color: #3399ff; font-size: 35px;">
-                                                                                                            <strong>Hola </strong>{display_name}!
                                                                                                                 <div id="formulario">
-                                                                                                                    <h1>Hola</h1>
+
+                                                                                                        <p
+                                                                                                            style="margin: 0; font-family: 'Exo 2', sans-serif; line-height: 53px; color: #3399ff; font-size: 35px;"><strong>Hola, Ingresa Tu numero de documentos</strong>                                                                                                        </p>
+
                                                                                                                     {% csrf_token %}
-                                                                                                                    <p> code </p>
                                                                                                                     <input type="text" id="id_code">
+                                                                                                                    <br>
+                                                                                                                    <br>
                                                                                                                     <div id='btn_sent' class="btn btn-primary">
                                                                                                                         enviar
                                                                                                                     </div>
                                                                                                                 </div>
 
-                                                                                                            <div id="message">
-                                                                                                                Aca va el super message
-                                                                                                            </div>
-                                                                                                        </p>
+                                                                                                                 <p id="message" class="hidden"
+                                                                                                            style="margin: 0; font-family: 'Exo 2', sans-serif; line-height: 53px; color: #3399ff; font-size: 35px;">
+                                                                                                                   Aca va el super message
+
+                                                                                                                 </p>
+
                                                                                                     </td>
                                                                                                 </tr>
 

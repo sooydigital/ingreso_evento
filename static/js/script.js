@@ -24,6 +24,11 @@ function hidenform(){
     $('#'+DOM_IDS.ID_FORM).addClass('hidden')
 }
 
+function showMessage(){
+        $('#'+DOM_IDS.ID_MESSAGE).removeClass('hidden')
+
+}
+
 function  updateRegistroSuccessCallback (data)  {
     console.log('data', data)
     console.log('show mensajes')
@@ -32,7 +37,7 @@ function  updateRegistroSuccessCallback (data)  {
     $('#' + DOM_IDS.ID_MESSAGE).html(
         mensaje
     )
-
+    showMessage()
 }
 
 function  updateRegistroErrorCallback() {
